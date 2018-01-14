@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 React Ui-Material Admin Template
 ================================
 
@@ -24,3 +25,6 @@ Installation / Running
 License
 -------
 MIT
+=======
+# bolao-react-web
+>>>>>>> 8e6c99ed54ee513b9ce9eacca7f0ae40ac9bfb6f
