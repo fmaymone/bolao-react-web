@@ -1,3 +1,4 @@
+import { Component } from 'react';
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Paper from 'material-ui/Paper';
@@ -11,9 +12,7 @@ import TextField from 'material-ui/TextField';
 import {Link} from 'react-router';
 import ThemeDefault from '../theme-default';
 
-const LoginPage = () => {
-
-  const styles = {
+ const styles = {
     loginContainer: {
       minWidth: 320,
       maxWidth: 400,
@@ -71,7 +70,14 @@ const LoginPage = () => {
       marginLeft: 5
     },
   };
+class LoginPage extends Component {
 
+handleLogin(){
+
+  console.log("Vamos logar?");
+}
+ 
+render(){
   return (
     <MuiThemeProvider muiTheme={ThemeDefault}>
       <div>
@@ -125,7 +131,7 @@ const LoginPage = () => {
             />
           </div>
 
-          <div style={styles.buttonsDiv}>
+          <div style={styles.buttonsDiv} >
             <Link to="/" style={{...styles.btn, ...styles.btnFacebook}}>
               <i className="fa fa-facebook fa-lg"/>
               <span style={styles.btnSpan}>Log in with Facebook</span>
@@ -139,6 +145,7 @@ const LoginPage = () => {
       </div>
     </MuiThemeProvider>
   );
+}
 };
 
 export default LoginPage;

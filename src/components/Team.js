@@ -7,7 +7,7 @@ import FlagIcon from './FlagIcon';
 
 class Team extends Component {
     render() {
-        console.log("Oi Mamae");
+        
       
         let name = this.props.team.name;
         let isoFlagName = this.props.team.iso2;
