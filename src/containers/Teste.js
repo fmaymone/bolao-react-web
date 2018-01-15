@@ -11,6 +11,7 @@ import WorldCup from '../world-cup';
 import Team from '../components/Team';
 import Match from '../components/Match';
 import TextField from 'material-ui/TextField';
+import firebase from './auth/firebase';
 
 const Teste = () => {
 
@@ -72,8 +73,10 @@ const Teste = () => {
             )}
           </TableBody>
         </Table>
+        
       </div>
     </PageBase>
+    
   );
 };
 
