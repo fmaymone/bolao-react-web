@@ -83,17 +83,17 @@ const data = {
         },
         {
             "id": 2,
-            "name": "Saudi Arabia",
+            "name": "Arabia Saudita",
             "iso2": "sa"
         },
         {
             "id": 3,
-            "name": "Egypt",
+            "name": "Egito",
             "iso2": "eg"
         },
         {
             "id": 4,
-            "name": "Uruguay",
+            "name": "Uruguai",
             "iso2": "uy"
         },
         {
@@ -103,27 +103,27 @@ const data = {
         },
         {
             "id": 6,
-            "name": "Spain",
+            "name": "Espanha",
             "iso2": "es"
         },
         {
             "id": 7,
-            "name": "Morocco",
+            "name": "Marrocos",
             "iso2": "ma"
         },
         {
             "id": 8,
-            "name": "Iran",
+            "name": "Irã",
             "iso2": "ir"
         },
         {
             "id": 9,
-            "name": "France",
+            "name": "França",
             "iso2": "fr"
         },
         {
             "id": 10,
-            "name": "Australia",
+            "name": "Austrália",
             "iso2": "au"
         },
         {
@@ -133,7 +133,7 @@ const data = {
         },
         {
             "id": 12,
-            "name": "Denmark",
+            "name": "Dinamarca",
             "iso2": "dk"
         },
         {
@@ -143,27 +143,27 @@ const data = {
         },
         {
             "id": 14,
-            "name": "Iceland",
+            "name": "Islândia",
             "iso2": "is"
         },
         {
             "id": 15,
-            "name": "Croatia",
+            "name": "Croácia",
             "iso2": "hr"
         },
         {
             "id": 16,
-            "name": "Nigeria",
+            "name": "Nigéria",
             "iso2": "ng"
         },
         {
             "id": 17,
-            "name": "Brazil",
+            "name": "Brasil",
             "iso2": "br"
         },
         {
             "id": 18,
-            "name": "Switzerland",
+            "name": "Suiça",
             "iso2": "ch"
         },
         {
@@ -173,52 +173,52 @@ const data = {
         },
         {
             "id": 20,
-            "name": "Serbia",
+            "name": "Sérvia",
             "iso2": "rs"
         },
         {
             "id": 21,
-            "name": "Germany",
+            "name": "Alemanha",
             "iso2": "de"
         },
         {
             "id": 22,
-            "name": "Mexico",
+            "name": "México",
             "iso2": "mx"
         },
         {
             "id": 23,
-            "name": "Sweden",
+            "name": "Suécia",
             "iso2": "se"
         },
         {
             "id": 24,
-            "name": "South Korea",
+            "name": "Coréia do Sul",
             "iso2": "kr"
         },
         {
             "id": 25,
-            "name": "Belgium",
+            "name": "Bélgica",
             "iso2": "be"
         },
         {
             "id": 26,
-            "name": "Panama",
+            "name": "Panamá",
             "iso2": "pa"
         },
         {
             "id": 27,
-            "name": "Tunisia",
+            "name": "Tunísia",
             "iso2": "tn"
         },
         {
             "id": 28,
-            "name": "England",
+            "name": "Inglaterra",
             "iso2": "gb-eng"
         },
         {
             "id": 29,
-            "name": "Poland",
+            "name": "Polônia",
             "iso2": "pl"
         },
         {
@@ -228,12 +228,12 @@ const data = {
         },
         {
             "id": 31,
-            "name": "Columbia",
+            "name": "Colômbia",
             "iso2": "co"
         },
         {
             "id": 32,
-            "name": "Japan",
+            "name": "Japão",
             "iso2": "jp"
         }
     ],

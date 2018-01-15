@@ -10,12 +10,13 @@ import Data from '../data';
 import WorldCup from '../world-cup';
 import Team from '../components/Team';
 import TextField from 'material-ui/TextField';
+import Paper from 'material-ui/Paper/Paper';
 
 const Teste = () => {
 
-  const value = 3;
+ 
 
-  console.log({ WorldCup })
+ 
 
   const styles = {
     floatingActionButton: {
@@ -55,7 +56,7 @@ const Teste = () => {
   return (
 
 
-
+    
 
     <PageBase title="Primeira Fase"
       navigation="Apostas / Primeira Fase">
@@ -64,11 +65,12 @@ const Teste = () => {
 
 
         <Table selectable={false}  >
-
+        
           <TableBody displayRowCheckbox={false}>
-            {WorldCup.groups.a.matches.map(item =>
+    
+            {WorldCup.groups.g.matches.map(item =>
               <TableRow key={item.id}>
-                {console.log({ item })};
+             
                 <TableRowColumn style={styles.columns.home}><Team team={WorldCup.teams[item.home_team - 1]} home={true} /></TableRowColumn>
                 <TableRowColumn style={styles.columns.home_score}>
                         <TextField
@@ -95,6 +97,8 @@ const Teste = () => {
         </Table>
       </div>
     </PageBase>
+    
+
   );
 };
 
