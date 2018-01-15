@@ -9,6 +9,7 @@ import PageBase from '../components/PageBase';
 import Data from '../data';
 import WorldCup from '../world-cup';
 import Team from '../components/Team';
+import Match from '../components/Match';
 import TextField from 'material-ui/TextField';
 import Paper from 'material-ui/Paper/Paper';
 
@@ -67,6 +68,7 @@ const Teste = () => {
         <Table selectable={false}  >
         
           <TableBody displayRowCheckbox={false}>
+<<<<<<< HEAD
     
             {WorldCup.groups.g.matches.map(item =>
               <TableRow key={item.id}>
@@ -92,6 +94,10 @@ const Teste = () => {
                 <TableRowColumn style={styles.columns.away}><Team team={WorldCup.teams[item.away_team - 1]} home={false} /></TableRowColumn>
 
               </TableRow>
+=======
+            {WorldCup.groups.a.matches.map(match =>
+              <Match match={match} />
+>>>>>>> 943abf8c8b6f3edc9a84c6f84e052b84f0652b8b
             )}
           </TableBody>
         </Table>

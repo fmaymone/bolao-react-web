@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import Team from './Team/Team';
-import classes from '../Match/Match.css';
-import axios from 'axios';
-import Grid from 'material-ui/Grid';
-import firebase, { auth, provider } from '../Firebase/Firebase';
-import { connect } from 'react-redux';
+import Team from './Team';
+
+import WorldCup from '../world-cup';
+
 
 import {
   Table,
@@ -19,7 +17,7 @@ import {
 } from 'material-ui/Table';
 
 import TextField from 'material-ui/TextField';
-import { CardSection } from '../common/CardSection';
+
 
 
 class Match extends Component {
@@ -33,41 +31,75 @@ class Match extends Component {
 
 
   render() {
+    const { match } = this.props;
+     const styles = {
+    floatingActionButton: {
+      margin: 0,
+      top: 'auto',
+      right: 20,
+      bottom: 20,
+      left: 'auto',
+      position: 'fixed',
+    },
+
+    columns: {
+      home: {
+        width: '20%',
+        textAlign: 'left'
+      },
+      home_score: {
+        width: '20%',
+        textAlign: 'center'
+        
+      },
+      versus: {
+        width: '20%',
+        textAlign: 'center'
+      },
+      away: {
+        width: '20%',
+        textAlign: 'right'
+
+      },
+      away_score: {
+        width: '20%'
+      }
+    }
+  };
 
     return (
-  <CardSection>
-     
-        <TableCell>
-          
 
-          <Team team={this.props.data.teams[this.props.match.home_team]} /> </TableCell>
-            <TableCell> <TextField type="number"
-              className="text-field-amount"
-              onInput={(e) => {
-                e.target.value = Math.max(0, parseInt(e.target.value)).toString().slice(0, 2)
-              }}
-          min={0} /> </TableCell>
-        <TableCell>X </TableCell>
-        <TableCell> <TextField type="number"
-          className="text-field-amount"
-          onInput={(e) => {
-            e.target.value = Math.max(0, parseInt(e.target.value)).toString().slice(0, 2)
-          }}
-          min={0} /> </TableCell>
-        <TableCell><Team team={this.props.data.teams[this.props.match.away_team]} /> </TableCell>
+      <TableRow key={match.id}>
+        {console.log({ match })};
+        <TableRowColumn style={styles.columns.home}><Team team={WorldCup.teams[match.home_team - 1]} home={true} /></TableRowColumn>
+        <TableRowColumn style={styles.columns.home_score}>
+          <TextField
+            defaultValue={0}
+            fullWidth={true}
+            type="number"
+            inputStyle={{ textAlign: 'center' }}
 
-        </CardSection>
+          /></TableRowColumn>
+        <TableRowColumn style={styles.columns.versus}>X</TableRowColumn>
+
+        <TableRowColumn style={styles.columns.home_score}>
+          <TextField
+            defaultValue={0}
+            fullWidth={true}
+            type="number"
+            inputStyle={{ textAlign: 'center' }}
+          /></TableRowColumn>
+        <TableRowColumn style={styles.columns.away}><Team team={WorldCup.teams[match.away_team - 1]} home={false} /></TableRowColumn>
+
+      </TableRow>
+
 
     )
   }
 }
 
-const mapStateToProps = state => {
 
-  return { data: state.data }
 
-};
-
-export default connect(mapStateToProps)(Match);
+export default Match;
 
 
