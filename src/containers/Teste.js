@@ -11,11 +11,8 @@ import WorldCup from '../world-cup';
 import Team from '../components/Team';
 import Match from '../components/Match';
 import TextField from 'material-ui/TextField';
-<<<<<<< HEAD
 import Paper from 'material-ui/Paper/Paper';
-=======
 import firebase from './auth/firebase';
->>>>>>> cb6e92ef22c45d3a4bbb08806f9d3f1c156fa4f9
 
 const Teste = () => {
 
@@ -72,36 +69,8 @@ const Teste = () => {
         <Table selectable={false}  >
         
           <TableBody displayRowCheckbox={false}>
-<<<<<<< HEAD
-    
-            {WorldCup.groups.g.matches.map(item =>
-              <TableRow key={item.id}>
-             
-                <TableRowColumn style={styles.columns.home}><Team team={WorldCup.teams[item.home_team - 1]} home={true} /></TableRowColumn>
-                <TableRowColumn style={styles.columns.home_score}>
-                        <TextField
-                        defaultValue={0}
-                          fullWidth={true}
-                          type="number"
-                          inputStyle={{ textAlign: 'center' }}
-                          
-                        /></TableRowColumn>
-                <TableRowColumn style={styles.columns.versus}>X</TableRowColumn>
-
-                <TableRowColumn style={styles.columns.home_score}>
-                        <TextField
-                        defaultValue={0}
-                          fullWidth={true}
-                          type="number"
-                          inputStyle={{ textAlign: 'center' }}
-                        /></TableRowColumn>
-                <TableRowColumn style={styles.columns.away}><Team team={WorldCup.teams[item.away_team - 1]} home={false} /></TableRowColumn>
-
-              </TableRow>
-=======
             {WorldCup.groups.a.matches.map(match =>
               <Match match={match} />
->>>>>>> 943abf8c8b6f3edc9a84c6f84e052b84f0652b8b
             )}
           </TableBody>
         </Table>
@@ -109,10 +78,6 @@ const Teste = () => {
       </div>
     </PageBase>
     
-<<<<<<< HEAD
-
-=======
->>>>>>> cb6e92ef22c45d3a4bbb08806f9d3f1c156fa4f9
   );
 };
 

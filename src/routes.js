@@ -10,10 +10,11 @@ import Teste from './containers/Teste';
 
 export default (
   <Route>
-    <Route path="login" component={LoginPage}/>
+   
     <Route path="/" component={App}>
       <IndexRoute component={Dashboard}/>
-      <Route path="dashboard" component={Dashboard}/>
+              <Route path="dashboard" component={Dashboard}/>
+      <Route path="login" component={LoginPage}/>
       <Route path="form" component={FormPage}/>
       <Route path="table" component={TablePage}/>
       <Route path="teste" component={Teste}/>
